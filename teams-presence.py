@@ -504,7 +504,7 @@ if __name__ == '__main__':
 	checkUpdate()
 
 	# Setup Unicorn light
-	setColor(50, 50, 50, 1, '', '')
+	setColor(50, 50, 50, 1, 1)
 	unicorn.set_layout(unicorn.AUTO)
 	unicorn.brightness(0.5)
 
