@@ -1,7 +1,10 @@
 ##!/usr/bin/env python
 # Python script to show Teams presence status on led
-# Author: Maximilian Krause
+# Original Author: Maximilian Krause
 # Date 29.05.2021
+# Fork by: Anthony Curtis
+# Date 1/31/2023
+# Updated to work with PiHAT Unicorn Mini
 
 # Define Error Logging
 def printerror(ex):
