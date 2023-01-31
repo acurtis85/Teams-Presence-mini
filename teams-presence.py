@@ -95,8 +95,8 @@ SCOPES = [
 workday_start = time(8)
 workday_end = time(19)
 workdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-width = 0
-height = 0
+width = 7
+height = 17
 blinkThread = None
 after_work = False
 globalRed = 0
@@ -225,7 +225,7 @@ def setColor(r, g, b, brightness, speed) :
 	globalBlue = b
 
 	if brightness == '' :
-		unicorn.brightness(brightness_led)
+		unicorn.set_brightness(brightness_led)
 
 	for y in range(height):
 		for x in range(width):
@@ -301,7 +301,7 @@ def switchOff() :
 	if blinkThread != None :
 		blinkThread.do_run = False
 	unicorn.clear()
-	unicorn.off()
+	unicorn.show()
 
 class LightPoint:
 
