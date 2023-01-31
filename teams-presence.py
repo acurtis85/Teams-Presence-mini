@@ -48,7 +48,7 @@ try:
 	import configparser
 	from urllib.error import HTTPError
 	import json
-	from unicornhatmini import UnicornHATMini as unicorn
+	from unicornhatmini import UnicornHATMini
 	import threading
 	import sys
 	import urllib.parse
@@ -110,6 +110,7 @@ points = []
 fullname = ''
 brightness_led = 0.5
 sleepValue = 30 # seconds
+unicorn = UnicornHATMini()
 # #############
 
 # Check for arguments
