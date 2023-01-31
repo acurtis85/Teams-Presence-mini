@@ -109,7 +109,7 @@ token=''
 points = []
 fullname = ''
 brightness_led = 0.5
-sleepValue = 1 # seconds
+sleepValue = 5 # seconds
 unicorn = UnicornHATMini()
 # #############
 
@@ -673,5 +673,5 @@ if __name__ == '__main__':
 			print("Teams presence:\t\t" + "Unknown")
 			switchBlue()
 		print()
-		#countdown(int(sleepValue))
+		countdown(int(sleepValue))
 
