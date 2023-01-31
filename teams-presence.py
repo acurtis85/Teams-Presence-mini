@@ -109,7 +109,7 @@ token=''
 points = []
 fullname = ''
 brightness_led = 0.5
-sleepValue = 30 # seconds
+sleepValue = 1 # seconds
 unicorn = UnicornHATMini()
 # #############
 
