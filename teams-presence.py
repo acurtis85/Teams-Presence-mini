@@ -291,7 +291,7 @@ def switchPink() :
 
 def switchYellow() :
 	red = 255
-	green = 255
+	green = 191
 	blue = 0
 	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
 	blinkThread.do_run = True
@@ -673,5 +673,5 @@ if __name__ == '__main__':
 			print("Teams presence:\t\t" + "Unknown")
 			switchBlue()
 		print()
-		countdown(int(sleepValue))
+		#countdown(int(sleepValue))
 
