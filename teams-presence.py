@@ -45,7 +45,7 @@ try:
 	import configparser
 	from urllib.error import HTTPError
 	import json
-	import unicornhat as unicorn
+	import unicornhatmini as unicorn
 	import threading
 	import sys
 	import urllib.parse
