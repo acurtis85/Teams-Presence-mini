@@ -173,4 +173,4 @@ def blinkRandom():
 	width, height = unicorn.get_shape()
 
 		
-blinkRandom("task")
+blinkRandom()
