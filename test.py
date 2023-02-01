@@ -3,8 +3,8 @@ import threading
 from time import sleep
 from random import randint
 import random
-width = 7
-height = 17
+width = 17
+height = 7
 blinkThread = None
 after_work = False
 globalRed = 0
