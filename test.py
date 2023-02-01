@@ -155,3 +155,8 @@ def blinkRandom(arg):
 		plot_points()
 		update_positions()
 		sleep(0.03)
+
+		
+setColor(0,255,0,'','')
+sleep(10)
+switchOff()
