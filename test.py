@@ -160,11 +160,11 @@ def plot_points():
 def blinkRandom():
 	t = threading.currentThread()
 	while getattr(t, "do_run", True):
-		if len(points) < 17 and randint(0, 17) > 1:
+		if len(points) < 5 and randint(0, 17) > 1:
 			points.append(LightPoint())
 		plot_points()
 		update_positions()
-		sleep(0.03)
+		sleep(0.1)
 
 # Setup Unicorn light
 	setColor(50, 50, 50, 1, 1)
