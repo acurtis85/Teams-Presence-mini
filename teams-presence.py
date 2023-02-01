@@ -258,55 +258,27 @@ def pulse():
 		sleep(0.05)
 
 def switchBlue() :
-	red = 0
-	green = 0
-	blue = 250
-	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
-	blinkThread.do_run = True
-	blinkThread.start()
+	unicorn.set_all(0,0,255)
+	unicorn.show()
 
-#def switchRed() :
-#	red = 250
-#	green = 0
-#	blue = 0
-#	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
-#	blinkThread.do_run = True
-#
+
 def switchRed():
 	unicorn.set_all(255,0,0)
 	unicorn.show()
 
 def switchGreen() :
-	red = 0
-	green = 250
-	blue = 0
-	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
-	blinkThread.do_run = True
-	blinkThread.start()
+	unicorn.set_all(0,255,0)
+	unicorn.show()
 
 def switchPink() :
-	red = 255
-	green = 108
-	blue = 180
-	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
-	blinkThread.do_run = True
-	blinkThread.start()
+	unicorn.set_all(255,108,180)
+	unicorn.show()
 
 def switchYellow() :
-	red = 255
-	green = 191
-	blue = 0
-	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
-	blinkThread.do_run = True
-	blinkThread.start()
+	unicorn.set_all(255,191,0)
+	unicorn.show()
 
 def switchOff() :
-	global blinkThread, globalBlue, globalGreen, globalRed
-	globalRed = 0
-	globalGreen = 0
-	globalBlue = 0
-	if blinkThread != None :
-		blinkThread.do_run = False
 	unicorn.clear()
 	unicorn.show()
 
