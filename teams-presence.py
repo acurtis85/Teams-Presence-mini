@@ -265,13 +265,16 @@ def switchBlue() :
 	blinkThread.do_run = True
 	blinkThread.start()
 
-def switchRed() :
-	red = 250
-	green = 0
-	blue = 0
-	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
-	blinkThread.do_run = True
-	blinkThread.start()
+#def switchRed() :
+#	red = 250
+#	green = 0
+#	blue = 0
+#	blinkThread = threading.Thread(target=setColor, args=(red, green, blue, '', ''))
+#	blinkThread.do_run = True
+#
+def switchRed():
+	unicorn.set_all(255,0,0)
+	unicorn.show()
 
 def switchGreen() :
 	red = 0
