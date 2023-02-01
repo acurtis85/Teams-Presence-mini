@@ -25,6 +25,14 @@ def setColor(r, g, b, brightness, speed) :
 		for y in range(height):
 			unicorn.set_pixel(x, y, r, g, b)
 			unicorn.show()
+			
+def setColor2(r, g, b, brightness, speed) :
+	if brightness == '' :
+		unicorn.set_brightness(brightness_led)
+	for x in range(width):
+		for y in range(height):
+			unicorn.set_pixel(x, y, r, g, b)
+			unicorn.show()
 
 def pulse():
 	for b in range(0, 7):
@@ -157,6 +165,6 @@ def blinkRandom(arg):
 		sleep(0.03)
 
 		
-setColor(0,255,0,'','')
-sleep(10)
+setColor2(0,255,0,'','')
+sleep(100)
 switchOff()
