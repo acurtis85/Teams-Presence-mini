@@ -239,7 +239,7 @@ def setColor(r, g, b, brightness, speed) :
 def pulse():
 	for b in range(0, 7):
 		blockPrint()
-		unicorn.brightness(b/10)
+		unicorn.set_brightness(b/10)
 		enablePrint()
 		for y in range(height):
 			for x in range(width):
@@ -249,7 +249,7 @@ def pulse():
 	sleep(1)
 	for b in range(6, 0, -1):
 		blockPrint()
-		unicorn.brightness(b/10)
+		unicorn.set_brightness(b/10)
 		enablePrint()
 		for y in range(height):
 			for x in range(width):
