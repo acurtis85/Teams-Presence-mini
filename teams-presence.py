@@ -108,7 +108,7 @@ globalBlue = 0
 token=''
 points = []
 fullname = ''
-brightness_led = 0.5
+brightness_led = 0.8
 sleepValue = 5 # seconds
 unicorn = UnicornHATMini()
 # #############
@@ -231,30 +231,24 @@ def setColor(r, g, b, brightness, speed) :
 	if brightness == '' :
 		unicorn.set_brightness(brightness_led)
 
-	for x in range(width):
-		for y in range(height):
-			unicorn.set_pixel(x, y, r, g, b)
-			unicorn.show()
+	unicorn.set_all(r, g, b)
+	unicorn.show()
 
 def pulse():
 	for b in range(0, 7):
 		blockPrint()
 		unicorn.set_brightness(b/10)
 		enablePrint()
-		for y in range(height):
-			for x in range(width):
-				unicorn.set_pixel(x, y, 102, 255, 255)
-				unicorn.show()
+		unicorn.set_all(102, 255, 255)
+		unicorn.show()
 		sleep(0.05)
 	sleep(1)
 	for b in range(6, 0, -1):
 		blockPrint()
 		unicorn.set_brightness(b/10)
 		enablePrint()
-		for y in range(height):
-			for x in range(width):
-				unicorn.set_pixel(x, y, 102, 255, 255)
-				unicorn.show()
+		unicorn.set_all(102, 255, 255)
+		unicorn.show()
 		sleep(0.05)
 
 def switchBlue() :
@@ -301,7 +295,7 @@ class LightPoint:
 
 		self.colour = []
 		for i in range(0, 3):
-			self.colour.append(randint(100, 255))
+			self.colour.append(randint(0, 255))
 
 
 def update_positions():
