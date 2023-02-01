@@ -155,11 +155,11 @@ def plot_points():
 		unicorn.set_pixel(point.x, point.y, point.colour[0], point.colour[1], point.colour[2])
 	unicorn.show()
 
-def blinkRandom(arg):
-	t = threading.currentThread()
-	while getattr(t, "do_run", True):
-		if len(points) < 10 and randint(0, 5) > 1:
-			points.append(LightPoint())
+def blinkRandom():
+	#t = threading.currentThread()
+	#while getattr(t, "do_run", True):
+	if len(points) < 10 and randint(0, 5) > 1:
+		points.append(LightPoint())
 		plot_points()
 		update_positions()
 		sleep(0.03)
