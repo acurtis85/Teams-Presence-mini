@@ -163,6 +163,6 @@ def blinkRandom(arg):
 		sleep(0.03)
 
 		
-setColor2(0,255,0,'','')
+setColor2(0,255,0)
 sleep(100)
 switchOff()
