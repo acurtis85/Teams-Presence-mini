@@ -160,7 +160,7 @@ def plot_points():
 def blinkRandom():
 	t = threading.currentThread()
 	while getattr(t, "do_run", True):
-		if len(points) < 17 and randint(0, 5) > 1:
+		if len(points) < 17 and randint(0, 17) > 1:
 			points.append(LightPoint())
 		plot_points()
 		update_positions()
