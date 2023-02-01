@@ -164,4 +164,4 @@ def blinkRandom(arg):
 		sleep(0.03)
 
 		
-blinkRandom()
+blinkRandom("task")
