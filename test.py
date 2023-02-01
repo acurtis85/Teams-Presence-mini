@@ -26,9 +26,7 @@ def setColor(r, g, b, brightness, speed) :
 			unicorn.set_pixel(x, y, r, g, b)
 			unicorn.show()
 			
-def setColor2(r, g, b, brightness, speed) :
-	if brightness == '' :
-		unicorn.set_brightness(brightness_led)
+def setColor2(r, g, b) :
 	for x in range(width):
 		for y in range(height):
 			unicorn.set_pixel(x, y, r, g, b)
