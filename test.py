@@ -13,11 +13,12 @@ fullname = ''
 brightness_led = 0.5
 sleepValue = 5 # seconds
 unicorn = UnicornHATMini()
+
 def setColor(r, g, b, brightness, speed) :
-global crntColors, globalBlue, globalGreen, globalRed
-globalRed = r
-globalGreen = g
-globalBlue = b
+	global crntColors, globalBlue, globalGreen, globalRed
+	globalRed = r
+	globalGreen = g
+	globalBlue = b
 	if brightness == '' :
 		unicorn.set_brightness(brightness_led)
 	for x in range(width):
