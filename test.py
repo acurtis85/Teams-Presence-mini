@@ -164,5 +164,13 @@ def blinkRandom(arg):
 		update_positions()
 		sleep(0.03)
 
+# Setup Unicorn light
+	setColor(50, 50, 50, 1, 1)
+#unicorn.set_layout(unicorn.AUTO)
+	unicorn.set_brightness(0.8)
+
+# Get the width and height of the hardware
+	width, height = unicorn.get_shape()
+
 		
 blinkRandom("task")
