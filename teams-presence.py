@@ -96,7 +96,7 @@ SCOPES = [
     'Presence.Read'
 ]
 workday_start = time(8)
-workday_end = time(19)
+workday_end = time(23)
 workdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 width = 7
 height = 17
