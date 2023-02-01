@@ -1,6 +1,7 @@
 from unicornhatmini import UnicornHATMini
 import threading
 from time import sleep
+from random import randint
 width = 7
 height = 17
 blinkThread = None
