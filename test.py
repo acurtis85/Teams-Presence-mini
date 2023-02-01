@@ -2,6 +2,7 @@ from unicornhatmini import UnicornHATMini
 import threading
 from time import sleep
 from random import randint
+import random
 width = 7
 height = 17
 blinkThread = None
@@ -151,6 +152,7 @@ def update_positions():
 def plot_points():
 
 	unicorn.clear()
+	unicorn.set_brightness(round(random.uniform(0, 1), 1))
 	for point in points:
 		unicorn.set_pixel(point.x, point.y, point.colour[0], point.colour[1], point.colour[2])
 	unicorn.show()
